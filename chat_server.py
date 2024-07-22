@@ -32,7 +32,7 @@ def start_server():
 
     while True:
         client_socket, client_address = server_socket.accept()
-        print(f"Connection from {client_address}")
+        print(f"Connection from, Осыдан қосылады {client_address}")
         clients.append(client_socket)
         client_thread = threading.Thread(target=handle_client, args=(client_socket,))
         client_thread.start()
